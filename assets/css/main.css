@@ -1795,6 +1795,13 @@ input, select, textarea {
 			margin: 0 0 4em 0;
 		}
 
+		.image.featured.small {
+			display: block;
+			width: 100%;
+			margin: 0 0 4em 0;
+			height: 100px
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -2780,6 +2787,9 @@ input, select, textarea {
 		/* Image */
 
 			.image.featured {
+				margin: 0 0 2em 0;
+			}
+			.image.featured.small {
 				margin: 0 0 2em 0;
 			}
 

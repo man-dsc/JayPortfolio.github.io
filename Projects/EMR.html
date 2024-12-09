@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EMR Conversion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="../index.html" id="logo">Jay's Portfolio</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../About.html">About</a></li>
+							<li>
+								<a href="../Projects.html">Projects</a>
+								<ul>
+									<li><a href="CarPrice.html">Car Price Predictor</a></li>
+									<li><a href="EMR.html">EMR Management</a></li>
+									
+								</ul>
+							</li>
+							<li><a href="../Resume.html">Resume</a></li>
+							<li><a href="https://github.com/man-dsc">GitHub</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h2><a href="#">EMR Migration Tool</a></h2>
+								<p>
+									Transfer thousands of data points between EMR systems
+								</p>
+								<div>								<u>Explore the EMR migration tool intrecasies. This tool will not be on my public GitHub.</u></div>
+							</header>
+
+
+						</article>
+						<hr />
+						<div class="row">
+							
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="../images/maketrainingset.png" alt="" /></a>
+								<header>
+									<h3><a href="#">Making a training set</a></h3>
+								</header>
+								<p>
+									The two steps for building this project are creating a training set and building the machine learning program.
+									This process works best if the team can manually label data for supervised learning.
+									If manual labeling is not feasible, we follow an alternative approach.
+									We sample random lines of data, selecting about 5-10% depending on the dataset's size.
+									Next, we use a medical dictionary and abbreviations to match terms to known subcategories.
+									These matches form the foundation for constructing the training set.
+
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="../images/training.png" alt="" /></a>
+								<header>
+									<h3><a href="#">Training the data</a></h3>
+								</header>
+								<p>
+									The pipeline for machine learning includes TF-IDF and Count Vectorizer.
+									TF-IDF is used to weigh terms by their importance, reducing the influence of commonly occurring but less meaningful words.
+									Count Vectorizer captures the raw frequency of terms, ensuring that high-occurrence patterns are well-represented.
+									Together, they complement each other by balancing term relevance with term frequency, making them effective for text data in this instance.
+									Multinomial Naive Bayes is used because it performs well with text data, particularly when feature values represent counts or probabilities.
+
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="../images/validation.png" alt="" /></a>
+								<header>
+									<h3><a href="#">Validation</a></h3>
+								</header>
+								<p>
+									K-fold cross-validation is used to evaluate the performance of a model by splitting the dataset into multiple subsets, ensuring that every data point is used for both training and testing.
+									Mean accuracy is used to summarize the average performance of the model across all folds, providing a reliable measure of its predictive power.
+									High values for accuracy score indicates strong model performance.
+									A K-fold accuracy in the mid-80s to 90s demonstrates consistent predictions across subsets, showing the model generalizes well.
+									A mean accuracy score of 86% confirms the model's overall effectiveness in capturing patterns and making accurate predictions, while avoiding overfitting.
+									<br/>
+									<br/>
+									Cross-Validation Accuracy Scores for each fold: [0.87732342 0.82527881 0.81412639 0.91449814 0.88059701]
+									Mean Accuracy Score: 0.86
+
+									
+								</p>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- footer -->
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<p>
+								<h3><a href="../Projects.html">See More Projects</a></h3>
+							</p>
+						</header>
+
+					</article>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
